@@ -42,7 +42,22 @@
 }
 
 /*Трансформация кнопки при наведении курсора*/
-.button_btn:hover {
+.button__btn:hover {
   transform: scale(1.2);
-  border: white;
+  border: 2px solid white;
+}
+
+/*Обертка для блока с добавлением новых постов*/
+.posts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*поля для добавления заголовка и текста*/
+.posts__input-title,
+.posts__input-text {
+  height: 40px;
+  min-width: 230px;
+  text-align: center;
 }
