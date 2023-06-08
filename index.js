@@ -68,16 +68,15 @@ btn.addEventListener("click", () => {
           container.append(newpostElement);
         });
       }
+      //очищаем поля ввода заголовка и текста новой статьи
+      postInputTitle.value = "";
+      postInputText.value = "";
     })
     .catch((error) => {
       //если запрос неуспешный, выдаем сообщение об ошибке
-      console.log("Произошла ошибка" + err);
+      console.log("Произошла ошибка" + "" + error);
       container.innerHTML += `Ой, произошла ошибка! Обратитесь в техподдержку.`;
     });
-
-  //очищаем поля ввода заголовка и текста новой статьи
-  postInputTitle.value = "";
-  postInputText.value = "";
 });
 
 //функция для создания нового контента
