@@ -61,3 +61,20 @@
   min-width: 230px;
   text-align: center;
 }
+
+/*блок для сообщения о необходимости заполнить поля*/
+.container-error {
+  margin-top: 30px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* input:valid {
+  border-color: green;
+}
+/* Это стили для не валидных полей */
+/* input:invalid {
+  border-color: #900;
+} */
